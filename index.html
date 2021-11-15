@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Casa de Passagem</title>
+    <link href="./assets/css/normalize.css" rel="stylesheet" />
+    <link href="./assets/css/reset.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/cabecalho.css">
+    <link rel="stylesheet" href="./assets/css/topo.css">
+    <link rel="stylesheet" href="./assets/css/identificacao.css">
+    <link rel="stylesheet" href="./assets/css/registro.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho__logo">
+            <h1>
+                <img class="cabecalho__logo--imagem" src="./assets/img/Brasao_de_Avare.svg" alt="Brasão de Avaré">
+            </h1>
+            <h2 class="cabecalho__texto">
+                <p>Prefeitura Municipal da Estância Turística de Avaré</p>
+                <p>Secretaria de Assistência e Desenvolvimento Social</p>
+                <p>CASA DE PASSAGEM</p>
+                <p>CADASTRO INDIVIDUAL OU FAMILIAR</p>
+            </h2>
+        </div>
+    </header>
+    <fieldset class="topo">
+        <div class="topo__ficha">
+            <label for="ficha-entrada">Ficha Cadastral de Entrada: Nº</label>
+            <input type="number" name="ficha-entrada" id="numero-ficha">
+        </div>
+        <div class="topo__data">
+            <label for="data">Data:</label>
+            <input type="date" name="data">
+        </div>
+        <div class="topo__conferido">
+            <label for="conferido">Conferido:</label>
+            <select name="conferido" id="conferido">
+                <option selected disabled value="">Selecione</option>
+                <option>Sim</option>
+                <option>Não</option>
+            </select>
+        </div>
+        <div class="topo__funcionario">
+            <label for="funcionario">Funcionário Responsável:</label>
+            <input type="text" name="funcionario" id="funcionario">
+        </div>
+    </fieldset>
+    <fieldset class="identificacao">
+        <div class="identificacao__titulo">
+            <h2>Identificação:</h2>
+        </div>
+        <div class="identificacao__nome">
+            <label for="name">Nome:</label>
+            <input type="text" name="name">
+        </div>
+        <div class="identificacao__nome-social">
+            <label for="nome-social">Nome social:</label>
+            <input type="text" name="nome-social">
+        </div>
+        <div class="identificacao__etnia">
+            <label for="etnia">Raça/etnia:</label>
+            <input id="etnia" type="text name=" etnia">
+        </div>
+        <div class="identificacao__dn">
+            <label for="nascimento">D.N:</label>
+            <input type="date" name="nascimento">
+        </div>
+        <div class="identificacao__origem">
+            <label for="origem">Origem:</label>
+            <input type="text" name="origem">
+        </div>
+        <div class="identificacao__telefone">
+            <label for="talefone">Telefone:</label>
+            <input type="tel" name="telefone">
+        </div>
+        <div class="identificacao__genero">
+            <label for="genero">Gênero:</label>
+            <select name="genero">
+                <option selected disabled value="">Selecione</option>
+                <option>M</option>
+                <option>F</option>
+                <option>Trans</option>
+            </select>
+        </div>
+        <div class="identificacao__filiacao">
+            <label for="filiacao">Filiação:</label>
+            <input type="text" name="filiacao">
+        </div>
+        <div class="identificacao__documento">
+            <label for="documento">Documento:</label>
+            <select id="documento">
+                <option selected disabled value="">Selecione</option>
+                <option>RG</option>
+                <option>CPF</option>
+                <option>Carteira de Trab.</option>
+                <option>Carteira de Hab.</option>
+                <option>Reservista</option>
+            </select>
+            <input type="checkbox"> Outros. Qual?
+            <input id="qual" type="text" name="qual">
+            <input type="checkbox"> B.O.
+        </div>
+        <div class="identificacao__documento-numero">
+            <label for="documento1">Nº de documento:</label>
+            <input id="documento1" type="text" name="documento1">
+            <label for="documento2">Nº de documento:</label>
+            <input type="text" name="documento2">
+        </div>
+        <div class="identificacao__civil">
+            <label for="estado-civil">Estado civil:</label>
+            <input type="text" name="estado-civil">
+        </div>
+        <div class="identificacao__escolaridade">
+            <label for="escolaridade">Escolaridade:</label>
+            <input type="text" name="escolaridade">
+        </div>
+        <div class="identificacao__profissao">
+            <label for="profissao">Profissão:</label>
+            <input type="text" name="profissao">
+        </div>
+        <div class="identificacao__saude">
+            <label id="saude" for="saude">Tem algum problema de saúde/toma algum remédio?</label>
+            <select name="saude">
+                <option selected disabled value="">Selecione</option>
+                <option value="s">Sim</option>
+                <option value="n">Não</option>
+            </select>
+        </div>
+        <div class="identificacao__remedio">
+            <label for="remedio">Qual?</label>
+            <input id="remedio" type="text" name="remedio">
+        </div>
+        <div class="identificacao__acompanhantes">
+            <h3 class="identificacao__acompanhantes--titulo">Acompanhantes:</h3>
+        </div>
+        <div class="identificacao__acompanhantes--tabela">
+            <label for="nome-acompanhante">Nome:</label>
+            <input id="nome-acompanhante" type="text" name="nome-acompanhante">
+            <label for="idade-acompanhante">Idade:</label>
+            <input id="idade-acompanhante" type="number" name="nome-acompanhante">
+            <label for="parentesco-acompanhante">Parentesco:</label>
+            <input id="parentesco-acompanhante" type="text" name="parentesco-acompanhante">
+        </div>
+        <div class="identificacao__acompanhantes--tabela">
+            <label for="nome-acompanhante">Nome:</label>
+            <input id="nome-acompanhante" type="text" name="nome-acompanhante">
+            <label for="idade-acompanhante">Idade:</label>
+            <input id="idade-acompanhante" type="number" name="nome-acompanhante">
+            <label for="parentesco-acompanhante">Parentesco:</label>
+            <input id="parentesco-acompanhante" type="text" name="parentesco-acompanhante">
+        </div>
+        <div class="identificacao__acompanhantes--tabela">
+            <label for="nome-acompanhante">Nome:</label>
+            <input id="nome-acompanhante" type="text" name="nome-acompanhante">
+            <label for="idade-acompanhante">Idade:</label>
+            <input id="idade-acompanhante" type="number" name="nome-acompanhante">
+            <label for="parentesco-acompanhante">Parentesco:</label>
+            <input id="parentesco-acompanhante" type="text" name="parentesco-acompanhante">
+        </div>
+        <div class="identificacao__acompanhantes--tabela">
+            <label for="nome-acompanhante">Nome:</label>
+            <input id="nome-acompanhante" type="text" name="nome-acompanhante">
+            <label for="idade-acompanhante">Idade:</label>
+            <input id="idade-acompanhante" type="number" name="nome-acompanhante">
+            <label for="parentesco-acompanhante">Parentesco:</label>
+            <input id="parentesco-acompanhante" type="text" name="parentesco-acompanhante">
+        </div>
+        <div class="identificacao__procedencia">
+            <label for="procedencia">Procedência: </label>
+            <input type="text" name="procedencia" id="procedencia">
+        </div>
+        <div class="identificacao__motivo">
+            <label class="identificacao__motivo--titulo">Motivo do acolhimento:</label>
+            <input id="rua" type="checkbox">Pessoa em situação de rua
+            <input id="desabrigo" type="checkbox">Desabrigo
+            <input id="migracao" type="checkbox">Migração
+            <input id="transito" type="checkbox">Pessoas em trânsito
+        </div>
+        <div class="identificacao__acesso">
+            <label class="identificacao__acesso--titulo">Acesso ao serviço:</label>
+            <input id="espontaneo" type="checkbox">Espontâneo
+            <input id="abordagem" type="checkbox">Abordagem
+            <input id="creas" type="checkbox">CREAS
+            <input id="cras" type="checkbox">CRAS
+            <input id="bombeiros" type="checkbox">Bombeiros
+            <input id="policia" type="checkbox">Polícia Militar
+            <input id="outros" type="checkbox">Outros. Qual?
+            <input type="text">
+        </div>
+        <div class="identificacao__pertences">
+            <label for="pertences" class="identificacao__pertences--titulo">Relação de Pertences: </label>
+            <input id="pertences" type="text" name="pertences">
+        </div>
+        <div class="identificacao__encaminhamento">
+            <input type="checkbox" name="creas-seas">
+            <label for="creas-seas" class="identificacao__encaminhamento--titulo">Encaminhamento Passagem CREAS/SEAS.
+                Destino: </label>
+            <input id="destino" type="text" name="destino">
+        </div>
+        <div class="identificacao__pernoites">
+            <input id="pernoite1" type="checkbox">1ª Pernoite
+            <input id="pernoite2" type="checkbox">2ª Pernoite
+            <input id="avaliacao" type="checkbox">Avaliação
+        </div>
+
+        <div class="identificacao__registro">
+            <h3 class="identificacao__registro--texto">Registros de Atendimento:</h3>
+            <textarea name="registro" id="registro" cols="30" rows="10" placeholder="Adicionar os registros aqui"></textarea>
+        </div>
+
+        <div class="identificacao__botao">
+            <button class="identificacao__botao--salvar" type="submit">Salvar</button>
+            <button class="identificacao__botao--editar" type="submit">Editar</button>
+            <button class="identificacao__botao--imprimir" type="submit">Imprimir</button>
+        </div>
+    </fieldset>
+<script src="./javascript.js"></script>
+</body>
+
+</html>

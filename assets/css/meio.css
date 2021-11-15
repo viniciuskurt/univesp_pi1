@@ -1,0 +1,15 @@
+.meio {
+    margin: 0 4rem;
+    padding: 1rem;
+}
+
+.meio__identificacao {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.meio div {
+    padding: .5rem;
+    display: flex;
+}
+

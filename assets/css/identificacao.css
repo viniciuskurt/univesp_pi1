@@ -1,0 +1,100 @@
+.identificacao {
+    background: #e9f0f0;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 4rem;
+    padding: 1rem;
+    font-size: 80%;
+}
+
+.identificacao div {
+    padding: .5rem;
+    display: flex;
+}
+
+.identificacao__titulo {
+    font-size: 1.2rem;
+    text-decoration: underline;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.identificacao__nome, .identificacao__nome-social {
+    flex-direction: column;
+    width: 49%;
+}
+
+.identificacao__origem, .identificacao__telefone, .identificacao__dn, .identificacao__genero {
+    margin-left: 5%;
+}
+
+.identificacao__dn, .identificacao__motivo--titulo, .identificacao__acesso--titulo, #documento1, #nome-acompanhante {
+    margin-right: 1rem;
+}
+
+#etnia {
+    width: 60%;
+}
+
+.identificacao__filiacao, .identificacao__remedio, .identificacao__procedencia, .identificacao__registro, #remedio {
+    flex-direction: column;
+    width: 100%;
+}
+
+#documento, #qual, #saude {
+    margin-right: .5rem;
+}
+
+#desabrigo, #migracao, #transito, #abordagem, #creas, #cras, #bombeiros, #policia, #outros, #avaliacao, #pernoite2   {
+    margin-left: 3rem;
+}
+
+.identificacao__acompanhantes, .identificacao__acompanhantes--tabela, .identificacao__encaminhamento, 
+.identificacao__ciente, #nome-acompanhante, #parentesco-acompanhante, #procedencia, #pertences, #destino {
+    width: 100%;
+}
+
+#idade-acompanhante {
+    margin-right: 1rem;
+    width: 10%;
+}
+
+.identificacao__ciente, .identificacao__assinatura {
+    margin-top: 1rem;
+}
+
+.identificacao__perteidentificacao__pernoitesnces--titulo {
+    width: 9%;
+}
+
+.identificacao__pertences {
+    width: 43%;
+}
+
+.identificacao__encaminhamento {
+    width: 55%;
+}
+
+.identificacao__pernoites {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.identificacao__botao {
+    width: 12%;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1400px) {
+    .identificacao__nome-social, .identificacao__nome {
+        width: 48%;
+    }
+    .identificacao__origem, .identificacao__telefone, .identificacao__dn, .identificacao__genero {
+        margin-left: 2.3%;
+    }
+    .identificacao__encaminhamento {
+        width: 50%;
+    }
+}
