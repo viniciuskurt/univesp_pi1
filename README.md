@@ -26,3 +26,4 @@ Atividade curricular obrigatória que consiste na resolução de um problema rea
 - MySQL
 - Github
 
+![](https://github.com/viniciuskurt/univesp_pi1/blob/master/assets/img/fichaonline.gif)
